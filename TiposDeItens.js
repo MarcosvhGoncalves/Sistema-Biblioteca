@@ -21,6 +21,7 @@ export class Ebook extends ItemBase {
     this.formatoArquivo = formatoArquivo;
   }
   calcularMulta(diasAtraso) {
+    let multa;
     if (diasAtraso > 0) {
       console.log(
         "=============== Arquivo bloqueado por atraso. Acesso revogado no dispositivo do leitor ===============",
