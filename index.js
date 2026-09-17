@@ -23,7 +23,7 @@ const rl = readline.createInterface({ input, output });
   console.log("2- Ebook");
   const tipoLivro = await rl.question("Digite a opção: ");
 
-  if (tipoLivro > 2){
+  if (tipoLivro > 2 || tipoLivro < 1){
     throw new error("======================== Opção inválida! ========================");
   }
 

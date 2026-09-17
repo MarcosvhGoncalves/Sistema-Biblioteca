@@ -9,7 +9,7 @@ export class LivroFisico extends ItemBase {
     let Multa = diasAtraso * 2.5;
     if (diasAtraso > 0)
       console.log(
-        `=============== Multa atual por atraso: ${Multa}. Devolva o livro o mais rápido possivel! ===============`,
+        `=============== Multa atual por atraso: ${Multa}.===============`,
       );
     return Multa;
   }
@@ -26,8 +26,8 @@ export class Ebook extends ItemBase {
       console.log(
         "=============== Arquivo bloqueado por atraso. Acesso revogado no dispositivo do leitor ===============",
       );
-      return (multa = 0.0);
+      return (multa = 0.00);
     }
-    return (multa = 0.0);
+    return (multa = 0.00);
   }
 }
